@@ -60,6 +60,7 @@ export default function AlertDialogSlide(props) {
         }
         setCookie("token", response.data.token, { path: "/" });
         console.log(state);
+        window.location = "/"
         dispatch({
           type: "HOSPITAL_REGISTER",
           payload: {

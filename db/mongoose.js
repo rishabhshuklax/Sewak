@@ -10,11 +10,11 @@ mongoose.connect(
     useFindAndModify: false,
     useCreateIndex: true,
   },
-  function (err) {
+  function (err,s) {
     if (err) {
       console.log(err);
     } else {
-      console.log("MongoDB Connected");
+      console.log("MongoDB Connected", s);
     }
   }
 );
